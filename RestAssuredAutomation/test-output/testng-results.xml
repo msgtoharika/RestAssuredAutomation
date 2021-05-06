@@ -1,17 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-11T21:22:34 IST" name="Default suite" finished-at="2021-04-11T21:22:43 IST" duration-ms="9479">
+  <suite started-at="2021-04-16T13:03:32 IST" name="Default suite" finished-at="2021-04-16T13:03:41 IST" duration-ms="8725">
     <groups>
     </groups>
-    <test started-at="2021-04-11T21:22:34 IST" name="Default test" finished-at="2021-04-11T21:22:43 IST" duration-ms="9479">
-      <class name="com.test.specbuilders.ReqRespSpecBuildersTest">
-        <test-method signature="verifyReqAndRespSpecBuilders()[pri:0, instance:com.test.specbuilders.ReqRespSpecBuildersTest@4f2b503c]" started-at="2021-04-11T21:22:34 IST" name="verifyReqAndRespSpecBuilders" finished-at="2021-04-11T21:22:43 IST" duration-ms="9404" status="PASS">
+    <test started-at="2021-04-16T13:03:32 IST" name="Default test" finished-at="2021-04-16T13:03:41 IST" duration-ms="8725">
+      <class name="com.test.wait.HandlingResponseTimeOuts">
+        <test-method signature="await()[pri:0, instance:com.test.wait.HandlingResponseTimeOuts@2ed2d9cb]" started-at="2021-04-16T13:03:32 IST" name="await" finished-at="2021-04-16T13:03:41 IST" duration-ms="8652" status="FAIL">
+          <exception class="org.awaitility.core.ConditionTimeoutException">
+            <message>
+              <![CDATA[Condition with com.test.wait.HandlingResponseTimeOuts was not fulfilled within 5 seconds.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.awaitility.core.ConditionTimeoutException: Condition with com.test.wait.HandlingResponseTimeOuts was not fulfilled within 5 seconds.
+at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:165)
+at org.awaitility.core.CallableCondition.await(CallableCondition.java:78)
+at org.awaitility.core.CallableCondition.await(CallableCondition.java:26)
+at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:895)
+at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:864)
+at com.test.wait.HandlingResponseTimeOuts.await(HandlingResponseTimeOuts.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.awaitility.core.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:101)
+at org.awaitility.core.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:81)
+at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:101)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.awaitility.core.ConditionTimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyReqAndRespSpecBuilders -->
-      </class> <!-- com.test.specbuilders.ReqRespSpecBuildersTest -->
+        </test-method> <!-- await -->
+      </class> <!-- com.test.wait.HandlingResponseTimeOuts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

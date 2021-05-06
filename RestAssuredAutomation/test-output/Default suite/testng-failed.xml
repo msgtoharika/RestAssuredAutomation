@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.serialization.SerializationTest">
+      <class name="com.test.wait.HandlingResponseTimeOuts">
         <methods>
-          <include name="addPlaceUsingPOJO"/>
+          <include name="await"/>
         </methods>
-      </class> <!-- com.test.serialization.SerializationTest -->
+      </class> <!-- com.test.wait.HandlingResponseTimeOuts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

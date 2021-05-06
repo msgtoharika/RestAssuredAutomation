@@ -15,7 +15,7 @@ public class ReadExcelData {
 
 	static Sheet sheet;
 
-	public static String TESTUSERDATA_PATH = "C:\\Users\\haa\\OneDrive - Adobe\\Documents\\API Stuff\\bookdetails.xlsx";
+	public static String TESTUSERDATA_PATH = "C:\\Users\\haa\\eclipse-workspace\\Selenium\\username-password-recovery-code.csv";
 
 	public static Object[][] getData(String sheetName) {
 		FileInputStream fis = null;
